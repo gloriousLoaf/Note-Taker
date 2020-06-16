@@ -4,11 +4,6 @@ const $saveNoteBtn = $(".save-note");
 const $newNoteBtn = $(".new-note");
 const $noteList = $(".list-container .list-group");
 
-// const saveBtn = document.querySelector(".save-note");
-// saveBtn.addEventListener("click", () => {
-//     alert(`Hello`);
-// })
-
 // activeNote is used to keep track of the note in the textarea
 let activeNote = {};
 
@@ -124,7 +119,8 @@ const renderNoteList = (notes) => {
 
         if (withDeleteButton) {
             const $delBtn = $(
-                "<i class='fas fa-trash-alt float-right text-danger delete-note'>"
+                `<i class='fas fa-trash-alt float-right text-danger delete-note'
+                 onmouseover="this.style.cursor='pointer'">`
             );
             $li.append($delBtn);
         }
@@ -132,7 +128,7 @@ const renderNoteList = (notes) => {
     };
 
     if (notes.length === 0) {
-        noteListItems.push(create$li("No saved Notes", false));
+        noteListItems.push(create$li("Create some notes 👉", false));
     }
 
     notes.forEach((note) => {
