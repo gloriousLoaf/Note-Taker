@@ -1,5 +1,5 @@
 
-# Note Taker (Work in Progress)
+# Express.js Note Taker
 An Express.js note taking app. Scheduled deployment by 06/20/2020.
 
 ![GitHub language count](https://img.shields.io/github/languages/count/gloriousLoaf/Note-Taker)
@@ -15,11 +15,11 @@ An Express.js note taking app. Scheduled deployment by 06/20/2020.
 <p>&nbsp;</p>
 
 ## Description
-An easy to use notes app that allows for creating persistent notes and deleting them when no longer needed. This is a **WORK IN PROGRESS**.
+An easy to use notes app that allows for creating persistent notes and deleting them when no longer needed.
 <p>&nbsp;</p>
 
 ## Installation
-Clone this repo, open **Note-Taker** directory in your CLI, and perform an ```npm install```. I am deploying this app on **Heroku**, but use whatever hosting method you prefer or test it locally with a utility like [Nodemon](https://nodemon.io/). More information to come as I further develop this application.
+Clone this repo, open **Note-Taker** directory in your CLI, and perform an ```npm install```. I will be deploying this app on **Heroku**, but use whatever hosting method you prefer or test it locally with a utility like [Nodemon](https://nodemon.io/). **More information to come** as I further develop this application.
 <p>&nbsp;</p>
 
 ## Usage
