@@ -54,6 +54,8 @@ const handleNoteSave = function () {
     const newNote = {
         title: $noteTitle.val(),
         text: $noteText.val(),
+        /* ADDED random ID for every note */
+        id: Math.floor((Math.random() * 998) + 1)
     };
 
     saveNote(newNote).then(() => {
@@ -119,7 +121,8 @@ const renderNoteList = (notes) => {
 
         if (withDeleteButton) {
             const $delBtn = $(
-                `<i class='fas fa-trash-alt float-right text-danger delete-note'
+                `<i class='fas fa-trash-alt float-right delete-note'
+                style='color: #f39c12'
                  onmouseover="this.style.cursor='pointer'">`
             );
             $li.append($delBtn);

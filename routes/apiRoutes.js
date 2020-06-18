@@ -52,14 +52,13 @@ module.exports = (app) => {
             res.json(oldNotes);
         })
     });
-    /* Not working yet... */
     // .delete a note
     app.delete("/api/notes/:id", (req, res) => {
         fs.readFile("./db/db.json", (err, data) => {
             if (err) throw err;
             let currentNotes = JSON.parse(data);
-            for (let note of currentNotes) {
-                // NO IDs yet!
+            // for-in loop through object, splicing out the clicked note
+            for (let note in currentNotes) {
                 if (req.params.id === currentNotes[note].id) {
                     currentNotes.splice(note, 1);
                 }
@@ -67,11 +66,11 @@ module.exports = (app) => {
                     console.log("That ID does not exist.")
                 }
             }
-            const output = fs.writeFile("./db/db.json", JSON.stringify(currentNotes), (err) => {
+            fs.writeFile("./db/db.json", JSON.stringify(currentNotes), (err) => {
                 if (err) throw err;
                 console.log("Notes updated.");
             })
-            res.send(output);
+            res.send(currentNotes);
         })
     })
 }
