@@ -19,11 +19,11 @@ An easy to use notes app that allows for creating persistent notes and deleting 
 <p>&nbsp;</p>
 
 ## Installation
-Clone this repo, open **Note-Taker** directory in your CLI, and perform an ```npm install```. I will be deploying this app on **Heroku**, but use whatever hosting method you prefer or test it locally with a utility like [Nodemon](https://nodemon.io/). **More information to come** as I further develop this application.
+Clone this repo, open **Note-Taker** directory in your CLI, and perform an ```npm install```. I developed this with [Nodemon](https://nodemon.io/).
 <p>&nbsp;</p>
 
 ## Usage
-Once installed and hosted, navigate to the ```index.html``` in a browser and begin creating notes. Again, more details and a demo YouTube video to come soon.
+Once installed and hosted, navigate to the ```index.html``` in a browser and begin creating notes. Check this app out on [Heroku](https://powerful-island-62545.herokuapp.com/) to see it in action.
 <p>&nbsp;</p>
 
 ---
