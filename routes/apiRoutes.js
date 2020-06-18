@@ -74,9 +74,3 @@ module.exports = (app) => {
         })
     })
 }
-
-// // working on some way to add id to app.post
-//     addIds = oldNotes.map((note, index) => {
-//         note.id = index;
-//     });
-// });

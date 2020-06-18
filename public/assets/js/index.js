@@ -122,7 +122,7 @@ const renderNoteList = (notes) => {
         if (withDeleteButton) {
             const $delBtn = $(
                 `<i class='fas fa-trash-alt float-right delete-note'
-                style='color: #f39c12'
+                style='color: #ef7479'
                  onmouseover="this.style.cursor='pointer'">`
             );
             $li.append($delBtn);

@@ -2,18 +2,15 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-  }
 
-  .save-note {
-    display: none;
   }
   
   .icons i {
     margin-left: 15px;
     margin-right: 15px;
     font-size: 1.5rem;
-    cursor: pointer;
-    color: #f39c12
+    /* THIS wasn't working, added to index.js ln 125
+    cursor: pointer; */
   }
   
   .note-textarea, .note-title {
@@ -69,4 +66,3 @@ html, body {
     padding: 20px;
     cursor: pointer;
   }
-  
